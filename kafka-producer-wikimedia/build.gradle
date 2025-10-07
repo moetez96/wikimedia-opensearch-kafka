@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group = 'org.example'
+group = 'io.kafka.wikimedia'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'io.kafka.wikimedia.WikimediaChangesProducer'
+}
 
 repositories {
     mavenCentral()

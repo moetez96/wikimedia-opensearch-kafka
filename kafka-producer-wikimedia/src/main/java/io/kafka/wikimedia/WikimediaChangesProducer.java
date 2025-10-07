@@ -21,7 +21,8 @@ public class WikimediaChangesProducer {
     public static void main(String[] args) throws InterruptedException {
         log.info("Kafka Producer Demo Started");
 
-        Dotenv dotenv = Dotenv.load();
+        Dotenv dotenv = Dotenv.configure()
+                .directory("../").load();
 
         String bootstrapServers = "localhost:9092";
         String topic = "wikimedia.recentchange";

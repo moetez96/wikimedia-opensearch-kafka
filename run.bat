@@ -1,0 +1,6 @@
+@echo off
+echo Starting Kafka Producer...
+start cmd /k gradlew :kafka-producer-wikimedia:run
+
+echo Starting Kafka Consumer...
+start cmd /k gradlew :kafka-consumer-opensearch:run

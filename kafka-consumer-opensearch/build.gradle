@@ -1,5 +1,10 @@
 plugins {
     id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'io.kafka.opensearch.OpenSearchConsumer'
 }
 
 group = 'io.kafka.opensearch'

@@ -71,19 +71,13 @@ Before running the producer and consumer, start the required services:
 
 ```
 
-This starts:
+Once running, services will be available on:
 
-Zookeeper
-Kafka Broker
-Schema Registry
-OpenSearch
-OpenSearch Dashboards
+**Kafka** → http://localhost:9092
 
-After everything is running:
+**OpenSearch** → http://localhost:9200
 
-Kafka → localhost:9092
-OpenSearch → http://localhost:9200
-Dashboards → http://localhost:5601
+**Dashboards** → http://localhost:5601
 
 ### Linux / macOS
 
@@ -99,8 +93,9 @@ run.bat
 
 These scripts start:
 
-The producer (kafka-producer-wikimedia)
-The consumer (kafka-consumer-opensearch)
+**The producer (kafka-producer-wikimedia)**
+
+**The consumer (kafka-consumer-opensearch)**
 
 Both modules will keep running and streaming data in real time.
 
